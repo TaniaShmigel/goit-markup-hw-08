@@ -1,0 +1,28 @@
+.container-hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66 40%),
+      url(../images/bg/Img-1.jpg);
+    background-position: center;
+  }
+  
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--grey-bg-color);
+    text-align: center;
+  }
+  .hero__title {
+    margin-bottom: 30px;
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primery-white-color);
+  }
