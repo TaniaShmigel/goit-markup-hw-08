@@ -13,7 +13,7 @@
   --btn-bg-color: #188ce8;
   /* Icons */
   --primery-icon-color: #afb1b8;
-  --gap:30px;
+  --gap: 30px;
   --items: 3;
   --indent: 30px;
 }
@@ -1416,9 +1416,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: wrap;
-      -ms-flex: wrap;
-          flex: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
   gap: 10px;
 }
@@ -1431,6 +1430,10 @@ body {
 }
 
 .mobile-socials__link {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding-right: 10px;
   font-size: 18px;
   line-height: 1.2222222222;

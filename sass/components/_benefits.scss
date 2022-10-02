@@ -3,85 +3,72 @@
   padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-
-  } 
-
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
 }
 
-
 .benefits__title {
- 
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    text-transform: uppercase;
-    color: var(--secondary-text-color);
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    } 
-
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
-  
-  .benefits__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    color: var(--primary-text-color);
+}
+
+.benefits__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--primary-text-color);
+}
+
+.benefits__list {
+  display: flex;
+  gap: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--secondary-text-color);
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
   }
-  
-  .benefits__list {
-    display: flex;
-    gap: 30px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    color: var(--secondary-text-color);
 
-    @media screen and (max-width: 767px) {
-      flex-direction: column;
-    }
-
-
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     flex-wrap: wrap;
-    }
-    
-    @media screen and (min-width: 1200px) {
-      display: flex;
-    }
-
-  }
-  
-  .benefits__item {
-
-    // width: 450px;
-
-    @media screen and (min-width: 768px) {
-      width: 354px;
-    } 
-
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-    }
-
   }
 
-  .benefits__icon {
-    @include flex (flex, center, center);
-    width: 100%;
-    height: 120px;
-    margin-bottom: 30px;
-  
-    background-color: #f5f4fa;
-    border-radius: 4px;
-
-  
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
+}
+
+.benefits__item {
+  
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.benefits__icon {
+  @include flex(flex, center, center);
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
