@@ -1,48 +1,61 @@
+.section {
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px, var(--primery-white-color));
+  }
+}
+
+
+
 .customers {
-    @include list (center, center, null, null, flex, var(--gap));
+  // @include list(center, center, null, null, flex, var(--gap));
 
-    // display: flex;
-    // gap: 30px;
-    // align-items: center;
-    // justify-content: center;
-  }
-
-  .customers__item {
-    @include item (5, var(--gap), 6);
-    height: 92px;
-  }
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+   
   
-  .customers__link {
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.customers__item {
+  flex-basis: calc((100% - 30px) / 2);
+  height: 92px;
 
-    &:hover,
-    &:focus { border: 1px solid var(--accent-text-color);}
-  }
-  
-  // .customers__link:hover,
-  // .customers__link:focus {
-  //   border: 1px solid var(--accent-text-color);
-  // }
-  
-  // .customers__link:hover .customers__icon,
-  // .customers__link:focus .customers__icon {
-  //   fill: var(--accent-text-color);
-  // }
-  
-  .customers__icon {
-    fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .customers__link:hover &,
-    .customers__link:focus & {
-      fill: var(--accent-text-color);
+  @media screen and (min-width: 768px) {   
+    flex-basis: calc((100% - 60px) / 3);
     }
+
+  @media screen and (min-width: 1200px) {
+    @include item(5, var(--gap), 6);
   }
+}
+
+.customers__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-text-color);
+  }
+
+  // @media screen and (min-width: 480px) {
+  // }
+}
+
+.customers__icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .customers__link:hover &,
+  .customers__link:focus & {
+    fill: var(--accent-text-color);
+  }
+}
